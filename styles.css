@@ -95,3 +95,8 @@ footer
 {
     background-color: #131313;
 }
+*::selection
+{
+	background: red;
+	color: #ffffff;
+}
