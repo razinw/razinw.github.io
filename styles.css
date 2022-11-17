@@ -48,11 +48,6 @@ details
     height: auto;
     margin-right: 0.5%;
 }
-.mail
-{
-    display: flex;
-    justify-content: start;
-}
 details:focus,summary:focus
 {
   outline: 0;
