@@ -38,13 +38,13 @@ details
 {
     padding: 10px 0 0 0;
 }
-#badges
+.badges
 {
     padding-top:0.5%;
 }
 .badge
 {
-    width: 5%;
+    width: 10%;
     height: auto;
     margin-right: 0.5%;
 }
@@ -89,7 +89,7 @@ a
 }
 a:hover
 {
-    color: #ffffff;
+    color: #ffed29;
     transition: all 0.5s ease 0s;
 }
 header
@@ -183,15 +183,55 @@ ul li
 {
     margin-left: 2%;
 }
-@media (max-width: 768px)
-{
-    .headerImg{width: 100%}
-    .badge{width: 25%}
-}
 .langBlock
 {
     position:fixed;
     right: 0;
     top: 0;
     padding:0.5%;
+}
+.mainDesc p:last-child, .mainDesc
+{
+    padding-top: 1%;
+}
+.footerMenu
+{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin: 0 auto;
+    align-items: stretch;
+    align-content: stretch;
+}
+.footerMenu>div
+{
+    flex-basis: 49%;
+    margin: 0% 0% 1% 1%;
+    max-width: 98%;
+    display: flex;
+    flex-direction: column;
+}
+.langBlock
+{
+    text-align: center;
+    margin: 0 auto;
+    padding: 0.5%;
+}
+@media (max-width: 768px)
+{
+    .headerImg{width: 100%}
+    .badge{width: 15%}
+    .footerMenu>div{flex-basis:98%;}
+    .badges{padding-top:2%;}
+    a, p{padding-top:2%;}
+    .mainDesc p:last-child, .mainDesc {padding-top:4%;}
+    h3{padding-top:1%;}
+    .langBlock{padding: 3%;}
+}
+.badge:hover
+{
+	-webkit-filter: contrast(200%);
+	filter: contrast(200%);
+	transition: all 0.5s ease 0s;
 }
